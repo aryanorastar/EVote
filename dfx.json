@@ -1,0 +1,15 @@
+{
+  "canisters": {
+    "evote_frontend": {
+      "type": "assets",
+      "source": ["dist/evote_frontend"]
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}

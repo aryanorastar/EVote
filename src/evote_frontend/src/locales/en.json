@@ -1,0 +1,15 @@
+{
+  "app_title": "EVote - Decentralized Voting",
+  "nav": {
+    "home": "Home",
+    "proposals": "Proposals",
+    "voting": "Voting",
+    "about": "About"
+  },
+  "home": {
+    "title": "Decentralized Governance for Your Community",
+    "description": "Transparent, secure, and fair decision-making powered by blockchain technology",
+    "viewProposals": "View Proposals",
+    "voteNow": "Vote Now"
+  }
+}

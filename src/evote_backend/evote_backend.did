@@ -1,0 +1,29 @@
+type Proposal = record {
+  id: nat64;
+  title: text;
+  description: text;
+  deadline: nat64;
+  votesFor: nat64;
+  votesAgainst: nat64;
+  status: text;
+  creator: principal;
+};
+
+type CreateProposalArgs = record {
+  title: text;
+  description: text;
+  durationInDays: nat64;
+};
+
+type VoteArgs = record {
+  proposalId: nat64;
+  support: bool;
+};
+
+service : {
+  "createProposal": (CreateProposalArgs) -> (nat64);
+  "castVote": (VoteArgs) -> (bool);
+  "getActiveProposals": () -> (vec Proposal) query;
+  "getProposal": (nat64) -> (opt Proposal) query;
+  "hasVoted": (nat64, principal) -> (bool) query;
+}

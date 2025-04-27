@@ -1,0 +1,71 @@
+/* Button System for Consistent UI */
+
+/* Base Button - All buttons should extend this */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 py-2 px-4 rounded-md font-medium transition-all duration-200 ease-in-out;
+}
+
+/* Primary Button - Blue, filled */
+.btn-primary {
+  @apply bg-primary-600 hover:bg-primary-700 text-white;
+}
+
+/* Secondary Button - Gray, filled */
+.btn-secondary {
+  @apply bg-gray-200 hover:bg-gray-300 text-gray-800;
+}
+
+/* Outline Button - Border only */
+.btn-outline {
+  @apply border-2 border-primary-600 text-primary-600 hover:bg-primary-50;
+}
+
+/* Success Button - Green */
+.btn-success {
+  @apply bg-green-600 hover:bg-green-700 text-white;
+}
+
+/* Warning Button - Amber */
+.btn-warning {
+  @apply bg-amber-500 hover:bg-amber-600 text-white;
+}
+
+/* Danger Button - Red */
+.btn-danger {
+  @apply bg-red-600 hover:bg-red-700 text-white;
+}
+
+/* Link Button - Looks like a link */
+.btn-link {
+  @apply text-primary-600 hover:text-primary-700 hover:underline p-0;
+}
+
+/* Authentication Button - For login/connect functions */
+.btn-auth {
+  @apply bg-primary-600 hover:bg-primary-700 text-white;
+}
+
+/* Disabled state for all buttons */
+.btn:disabled {
+  @apply opacity-60 cursor-not-allowed;
+}
+
+/* Small size */
+.btn-sm {
+  @apply py-1 px-3 text-sm;
+}
+
+/* Large size */
+.btn-lg {
+  @apply py-3 px-6 text-lg;
+}
+
+/* Full width */
+.btn-block {
+  @apply w-full;
+}
+
+/* Button with icon */
+.btn-icon {
+  @apply p-2 rounded-full;
+}

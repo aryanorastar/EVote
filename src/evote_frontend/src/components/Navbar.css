@@ -1,0 +1,222 @@
+.navbar {
+  background-color: var(--color-surface, white);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  margin-right: 2rem;
+}
+
+.navbar-spacer {
+  flex: 1;
+}
+
+.language-selector {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0;
+}
+
+.navbar-language-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1.5rem 0.2rem 1.5rem;
+  background: transparent;
+}
+
+
+.navbar-logo {
+  color: var(--color-primary, #2563eb);
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo i {
+  margin-left: 8px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.nav-item {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  color: #374151; /* text-gray-700 */
+  font-weight: 500; /* font-medium */
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-links.active {
+  color: #2563eb; /* text-primary-600 */
+  font-weight: 600; /* font-semibold */
+}
+
+.nav-links.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125rem; /* h-0.5 */
+  background-color: #2563eb; /* bg-primary-600 */
+  border-radius: 9999px; /* rounded-full */
+  animation: navIndicatorFadeIn 0.3s forwards;
+}
+
+@keyframes navIndicatorFadeIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.nav-links i {
+  margin-right: 0.5rem; /* mr-2 */
+}
+
+.connect-wallet {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: var(--color-primary, #2563eb);
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.connect-wallet i {
+  margin-right: 8px;
+}
+
+.connect-wallet:hover {
+  background-color: var(--color-primary-dark, #1d4ed8);
+}
+
+.connect-wallet.connected {
+  background-color: var(--color-success, #10b981);
+}
+
+.connect-wallet.connected:hover {
+  background-color: #0ea271;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Add some helper classes similar to Tailwind to ensure backwards compatibility */
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-language-bar {
+    justify-content: center;
+    padding: 0.5rem 0 0.2rem 0;
+  }
+  .navbar-container {
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  .language-selector {
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar-container {
+    padding: 0 10px;
+  }
+  
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  
+  .nav-menu.active {
+    background: var(--color-surface, white);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    padding-top: 20px;
+  }
+  
+  .nav-item {
+    height: 60px;
+    width: 100%;
+  }
+  
+  .nav-links {
+    padding: 2rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  
+  .connect-wallet {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+  }
+  
+  .nav-links.active::after {
+    left: 1rem; /* left-4 */
+    right: 1rem; /* right-4 */
+    width: auto;
+  }
+}

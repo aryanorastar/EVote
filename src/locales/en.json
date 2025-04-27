@@ -1,0 +1,16 @@
+{
+  "app_title": "EVote - Decentralized Voting",
+  "nav": {
+    "home": "Home",
+    "proposals": "Proposals",
+    "voting": "Voting",
+    "about": "About"
+  },
+  "welcome": "Welcome to EVote!",
+  "select_language": "Select Language",
+  "proposal": {
+    "title": "Proposal Title",
+    "description": "Description",
+    "submit": "Submit Proposal"
+  }
+}

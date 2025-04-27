@@ -1,0 +1,54 @@
+/* Include font awesome classes for backward compatibility */
+.fa, .fas, .far, .fal, .fad, .fab {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* Fix spacing for icons */
+i.mr-2 {
+  margin-right: 0.5rem;
+}
+
+/* Common icon styles */
+.fa-home:before {
+  content: "\f015";
+}
+
+.fa-clipboard-list:before {
+  content: "\f46d";
+}
+
+.fa-vote-yea:before {
+  content: "\f772";
+}
+
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+.fa-user-check:before {
+  content: "\f4fc";
+}
+
+.fa-sign-in-alt:before {
+  content: "\f2f6";
+}
+
+.fa-times:before {
+  content: "\f00d";
+}
+
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-map-marker-alt:before {
+  content: "\f3c5";
+}

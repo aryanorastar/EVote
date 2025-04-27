@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Public Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+code {
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', 'Cabinet Grotesk', Arial, sans-serif;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 3rem; font-weight: 900; }
+h2 { font-size: 2.25rem; font-weight: 800; }
+h3 { font-size: 1.5rem; font-weight: 700; }
+h4 { font-size: 1.25rem; font-weight: 600; }
+h5 { font-size: 1rem; font-weight: 600; }
+h6 { font-size: 0.875rem; font-weight: 600; }
+
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}
+
+.important-text {
+  font-size: 16px;
+  font-weight: 500;
+}

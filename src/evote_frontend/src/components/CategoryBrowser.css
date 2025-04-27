@@ -1,0 +1,32 @@
+.category-browser {
+  @apply w-full;
+}
+
+.category-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
+}
+
+.category-card {
+  @apply flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md hover:border-primary-100 transition-all;
+  text-decoration: none;
+}
+
+.category-icon {
+  @apply w-12 h-12 rounded-lg flex items-center justify-center mr-4;
+}
+
+.category-icon i {
+  @apply text-xl;
+}
+
+.category-name {
+  @apply text-gray-800 font-medium flex-grow;
+}
+
+.category-arrow {
+  @apply text-gray-400 text-xs opacity-0 transform translate-x-0 transition-all duration-200;
+}
+
+.category-card:hover .category-arrow {
+  @apply opacity-100 translate-x-1 text-primary-500;
+}

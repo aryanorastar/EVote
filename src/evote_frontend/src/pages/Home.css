@@ -1,0 +1,2544 @@
+.home {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1e88e5 0%, #512da8 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #1e88e5;
+}
+
+.btn-primary:hover {
+  background-color: #f5f5f5;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Features Section */
+.features {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  text-align: center;
+  margin: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #1e88e5;
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.feature p {
+  color: #666;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.step {
+  flex-basis: calc(33.33% - 40px);
+  margin: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: #1e88e5;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.step p {
+  color: #666;
+}
+
+@media screen and (max-width: 960px) {
+  .feature, .step {
+    flex-basis: calc(50% - 40px);
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature, .step {
+    flex-basis: 100%;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Home Page Styles with Tailwind-like classes */
+
+.home-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+}
+
+/* Hero Section - Asymmetrical Layout */
+.hero-section {
+  @apply flex flex-col md:flex-row items-center gap-8 py-12 mb-16 bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl overflow-hidden relative;
+}
+
+.hero-content {
+  @apply p-8 md:w-1/2 z-10;
+}
+
+.hero-title {
+  @apply text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight;
+}
+
+.hero-subtitle {
+  @apply text-xl text-gray-700 mb-8 max-w-lg;
+}
+
+.hero-buttons {
+  @apply flex flex-wrap gap-4 mb-10;
+}
+
+.btn-primary {
+  @apply bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg;
+}
+
+.btn-outline {
+  @apply border-2 border-primary-600 text-primary-600 hover:bg-primary-50 px-6 py-3 rounded-md font-medium transition-all duration-200;
+}
+
+.hero-stats {
+  @apply flex flex-wrap gap-8 mt-8;
+}
+
+.stat {
+  @apply flex flex-col items-start;
+}
+
+.stat-number {
+  @apply text-3xl font-bold text-primary-600;
+}
+
+.stat-label {
+  @apply text-sm text-gray-600;
+}
+
+.hero-visual {
+  @apply md:w-1/2 p-8 h-96 flex items-center justify-center;
+}
+
+.hero-auth-prompt {
+  @apply mt-6 p-4 bg-primary-50 border border-primary-100 rounded-lg;
+}
+
+.hero-auth-prompt p {
+  @apply text-primary-800 mb-3;
+}
+
+.btn-cta {
+  @apply inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-md transition-colors;
+}
+
+.btn-cta::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  @apply text-xs transition-transform duration-300;
+}
+
+.btn-cta:hover::after {
+  transform: translateX(3px);
+}
+
+/* Featured Proposals Carousel */
+.featured-section {
+  @apply mb-16;
+}
+
+.section-title {
+  @apply text-2xl font-bold text-gray-800 mb-6 relative inline-block;
+}
+
+.section-title::after {
+  content: "";
+  @apply absolute bottom-0 left-0 w-1/2 h-1 bg-primary-500 rounded-full -mb-2;
+}
+
+.carousel-container {
+  @apply relative w-full overflow-hidden rounded-xl shadow-lg;
+  height: 400px;
+}
+
+.carousel-track {
+  @apply flex h-full transition-transform duration-500 ease-out;
+  width: 100%;
+}
+
+.carousel-slide {
+  @apply min-w-full h-full flex-shrink-0;
+}
+
+.carousel-card {
+  @apply w-full h-full bg-gray-200 bg-cover bg-center relative;
+}
+
+.carousel-card::after {
+  content: '';
+  @apply absolute inset-0 bg-black bg-opacity-30;
+}
+
+.carousel-content {
+  @apply absolute bottom-0 left-0 right-0 p-8 text-white z-10;
+}
+
+.carousel-content h3 {
+  @apply text-2xl font-bold mb-2;
+}
+
+.carousel-content p {
+  @apply mb-4 line-clamp-2;
+}
+
+.carousel-btn {
+  @apply inline-block bg-white text-primary-600 px-4 py-2 rounded-md font-medium transition-all hover:bg-primary-50;
+}
+
+.carousel-indicators {
+  @apply absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2;
+}
+
+.carousel-indicator {
+  @apply w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all;
+  border: none;
+}
+
+.carousel-indicator.active {
+  @apply bg-white w-6;
+}
+
+.carousel-control {
+  @apply absolute top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-70 w-10 h-10 rounded-full flex items-center justify-center text-gray-800 z-10 transition-all;
+  border: none;
+}
+
+.carousel-control:focus {
+  @apply outline-none;
+}
+
+.carousel-control.prev {
+  @apply left-4;
+}
+
+.carousel-control.next {
+  @apply right-4;
+}
+
+/* Two-column layout */
+.two-column-section {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8 mb-16;
+}
+
+/* Categories Section */
+.categories-section {
+  @apply bg-white p-6 rounded-xl shadow-md;
+}
+
+/* Activity Feed Section */
+.activity-section {
+  @apply bg-white p-6 rounded-xl shadow-md;
+}
+
+/* Call to Action Section */
+.cta-section {
+  @apply bg-primary-600 text-white rounded-xl p-12 text-center mb-16;
+}
+
+.cta-content h2 {
+  @apply text-3xl font-bold mb-4;
+}
+
+.cta-content p {
+  @apply text-lg mb-8 max-w-2xl mx-auto;
+}
+
+.cta-button {
+  @apply bg-white text-primary-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium inline-block transition-all shadow-md hover:shadow-lg;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    @apply text-center;
+  }
+  
+  .hero-buttons {
+    @apply justify-center;
+  }
+  
+  .hero-stats {
+    @apply justify-center;
+  }
+}
+
+/* Enhanced Featured Proposals Section */
+.featured-proposals {
+  padding: 2rem 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  position: relative;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #4f46e5, #6366f1);
+  border-radius: 3px;
+}
+
+.view-all {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4f46e5;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.view-all:hover {
+  color: #4338ca;
+}
+
+.view-all i {
+  font-size: 0.75rem;
+  transition: transform 0.2s;
+}
+
+.view-all:hover i {
+  transform: translateX(3px);
+}
+
+.featured-proposals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Make featured proposals stand out more */
+@media (min-width: 1024px) {
+  .featured-proposals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-proposals-grid {
+    gap: 1.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .featured-proposals-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+/* Add hover animation for featured proposals */
+.featured-proposals-grid .proposal-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Update Hero Section with Improved Animation */
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f9fafb 0%, #eff6ff 100%);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+  z-index: 5;
+}
+
+.hero-title-bold {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.1;
+  display: inline-block;
+}
+
+.hero-title-gradient {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #4f46e5, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.hero-animation {
+  margin: 2rem 0;
+  min-height: 4rem;
+  position: relative;
+}
+
+.animated-text-container {
+  position: relative;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.animated-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4b5563;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: textCycle 9s infinite;
+}
+
+.animated-text:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.animated-text:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes textCycle {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  3%, 33% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  36% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.text-highlight {
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.cta-button i {
+  transition: transform 0.2s;
+}
+
+.cta-button:hover i {
+  transform: translateX(3px);
+}
+
+.cta-button.primary {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+}
+
+.cta-button.primary:hover {
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+  box-shadow: 0 15px 20px -3px rgba(79, 70, 229, 0.4);
+  transform: translateY(-1px);
+}
+
+.cta-button.secondary {
+  background: white;
+  color: #4f46e5;
+  border: 1px solid rgba(79, 70, 229, 0.3);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.cta-button.secondary:hover {
+  background: #f9fafb;
+  border-color: #4f46e5;
+  box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.hero-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.15);
+}
+
+.blockchain-visual {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  box-shadow: 0 15px 40px rgba(79, 70, 229, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 2s ease;
+}
+
+.blockchain-visual:hover {
+  transform: rotate(10deg) scale(1.02);
+}
+
+/* Double border effect */
+.blockchain-visual::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 50%;
+  border: 2px dashed rgba(79, 70, 229, 0.3);
+  animation: rotateCircle 30s linear infinite;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blockchain-central {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #818cf8);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 10;
+  animation: pulseGlow 3s infinite alternate;
+}
+
+/* Enhanced glow effect */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 25px rgba(79, 70, 229, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 60px rgba(79, 70, 229, 0.7);
+  }
+}
+
+.central-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.central-label {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Positioned nodes for the larger circle */
+.blockchain-node {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blockchain-node:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.4);
+}
+
+.blockchain-node i {
+  font-size: 2.5rem;
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+}
+
+.node-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+/* Repositioned nodes for larger circle */
+.blockchain-node.node1 {
+  top: 80px;
+  left: 100px;
+  animation: nodeFloat 8s infinite ease-in-out;
+}
+
+.blockchain-node.node2 {
+  bottom: 100px;
+  left: 120px;
+  animation: nodeFloat 8s infinite ease-in-out 2s;
+}
+
+.blockchain-node.node3 {
+  top: 120px;
+  right: 100px;
+  animation: nodeFloat 8s infinite ease-in-out 4s;
+}
+
+.blockchain-node.node4 {
+  bottom: 120px;
+  right: 120px;
+  animation: nodeFloat 8s infinite ease-in-out 6s;
+}
+
+/* Longer connections for the expanded circle */
+.blockchain-connection {
+  position: absolute;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(79, 70, 229, 0.2), #4f46e5);
+  z-index: 1;
+  animation: connectionPulse 4s infinite;
+}
+
+.blockchain-connection.connection1 {
+  width: 220px;
+  top: 130px;
+  left: 170px;
+  transform: rotate(15deg);
+}
+
+.blockchain-connection.connection2 {
+  width: 220px;
+  bottom: 160px;
+  left: 190px;
+  transform: rotate(-15deg);
+  animation-delay: 1s;
+}
+
+.blockchain-connection.connection3 {
+  width: 220px;
+  top: 150px;
+  right: 170px;
+  transform: rotate(-15deg);
+  animation-delay: 2s;
+}
+
+.blockchain-connection.connection4 {
+  width: 220px;
+  bottom: 160px;
+  right: 190px;
+  transform: rotate(15deg);
+  animation-delay: 3s;
+}
+
+/* Add orbital rings to enhance the visual */
+.blockchain-visual::after {
+  content: '';
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  border: 1px solid rgba(79, 70, 229, 0.15);
+  animation: rotateCircle 40s linear infinite reverse;
+}
+
+.hero-visual {
+  flex: 1.8; /* Increased from 1.5 to give more space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 650px; /* Increased height */
+}
+
+/* Particles inside the blockchain circle */
+.blockchain-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4f46e5;
+  opacity: 0.7;
+  z-index: 1;
+  animation: particleMove 15s infinite linear;
+}
+
+.blockchain-particle:nth-child(1) {
+  top: 30%;
+  left: 30%;
+  animation-duration: 12s;
+}
+
+.blockchain-particle:nth-child(2) {
+  top: 60%;
+  left: 40%;
+  animation-duration: 18s;
+  animation-delay: 2s;
+}
+
+.blockchain-particle:nth-child(3) {
+  top: 40%;
+  right: 35%;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+
+@keyframes particleMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(100px, 50px);
+  }
+  50% {
+    transform: translate(50px, 150px);
+  }
+  75% {
+    transform: translate(-70px, 30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* More dramatic float effect for the bigger visual */
+@keyframes nodeFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(3deg);
+  }
+}
+
+/* Responsive adjustments for the larger blockchain visual */
+@media (max-width: 1400px) {
+  .blockchain-visual {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .blockchain-central {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .central-icon {
+    font-size: 2.5rem;
+  }
+  
+  .blockchain-node {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .blockchain-node i {
+    font-size: 2rem;
+  }
+  
+  .blockchain-connection.connection1,
+  .blockchain-connection.connection2,
+  .blockchain-connection.connection3,
+  .blockchain-connection.connection4 {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blockchain-visual {
+    width: 450px;
+    height: 450px;
+  }
+  
+  .hero-visual {
+    height: 500px;
+  }
+  
+  .blockchain-node {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .blockchain-central {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .central-icon {
+    font-size: 2rem;
+  }
+  
+  .blockchain-connection.connection1,
+  .blockchain-connection.connection2,
+  .blockchain-connection.connection3,
+  .blockchain-connection.connection4 {
+    width: 160px;
+  }
+}
+
+/* Rest of responsive adjustments */
+@media (max-width: 1024px) {
+  /* ... existing media query styles ... */
+  
+  .blockchain-visual {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* New Stats Section with Better Visual Framing */
+.stats-highlight-section {
+  margin: 4rem 0;
+  padding: 2rem 0;
+}
+
+.stats-container {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-header {
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.stats-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.stats-header p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: #f9fafb;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(79, 70, 229, 0.1);
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.stats-cta {
+  margin-top: 1rem;
+}
+
+/* Enhanced Hero Section with More Focus on Animation */
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f9fafb 0%, #eff6ff 100%);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 500px;
+  z-index: 5;
+  padding-right: 2rem;
+}
+
+/* Expanded Visual Section */
+.hero-visual {
+  flex: 1.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 650px;
+}
+
+.blockchain-visual {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  box-shadow: 0 15px 40px rgba(79, 70, 229, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 2s ease;
+}
+
+.blockchain-visual:hover {
+  transform: rotate(10deg) scale(1.02);
+}
+
+/* Double border effect */
+.blockchain-visual::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 50%;
+  border: 2px dashed rgba(79, 70, 229, 0.3);
+  animation: rotateCircle 30s linear infinite;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blockchain-central {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #818cf8);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 10;
+  animation: pulseGlow 3s infinite alternate;
+}
+
+/* Enhanced glow effect */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 25px rgba(79, 70, 229, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 60px rgba(79, 70, 229, 0.7);
+  }
+}
+
+.central-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.central-label {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Positioned nodes for the larger circle */
+.blockchain-node {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blockchain-node:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.4);
+}
+
+.blockchain-node i {
+  font-size: 2.5rem;
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+}
+
+.node-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+/* Repositioned nodes for larger circle */
+.blockchain-node.node1 {
+  top: 80px;
+  left: 100px;
+  animation: nodeFloat 8s infinite ease-in-out;
+}
+
+.blockchain-node.node2 {
+  bottom: 100px;
+  left: 120px;
+  animation: nodeFloat 8s infinite ease-in-out 2s;
+}
+
+.blockchain-node.node3 {
+  top: 120px;
+  right: 100px;
+  animation: nodeFloat 8s infinite ease-in-out 4s;
+}
+
+.blockchain-node.node4 {
+  bottom: 120px;
+  right: 120px;
+  animation: nodeFloat 8s infinite ease-in-out 6s;
+}
+
+/* Longer connections for the expanded circle */
+.blockchain-connection {
+  position: absolute;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(79, 70, 229, 0.2), #4f46e5);
+  z-index: 1;
+  animation: connectionPulse 4s infinite;
+}
+
+.blockchain-connection.connection1 {
+  width: 220px;
+  top: 130px;
+  left: 170px;
+  transform: rotate(15deg);
+}
+
+.blockchain-connection.connection2 {
+  width: 220px;
+  bottom: 160px;
+  left: 190px;
+  transform: rotate(-15deg);
+  animation-delay: 1s;
+}
+
+.blockchain-connection.connection3 {
+  width: 220px;
+  top: 150px;
+  right: 170px;
+  transform: rotate(-15deg);
+  animation-delay: 2s;
+}
+
+.blockchain-connection.connection4 {
+  width: 220px;
+  bottom: 160px;
+  right: 190px;
+  transform: rotate(15deg);
+  animation-delay: 3s;
+}
+
+/* Add orbital rings to enhance the visual */
+.blockchain-visual::after {
+  content: '';
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  border: 1px solid rgba(79, 70, 229, 0.15);
+  animation: rotateCircle 40s linear infinite reverse;
+}
+
+.hero-visual {
+  flex: 1.8; /* Increased from 1.5 to give more space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 650px; /* Increased height */
+}
+
+/* Particles inside the blockchain circle */
+.blockchain-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4f46e5;
+  opacity: 0.7;
+  z-index: 1;
+  animation: particleMove 15s infinite linear;
+}
+
+.blockchain-particle:nth-child(1) {
+  top: 30%;
+  left: 30%;
+  animation-duration: 12s;
+}
+
+.blockchain-particle:nth-child(2) {
+  top: 60%;
+  left: 40%;
+  animation-duration: 18s;
+  animation-delay: 2s;
+}
+
+.blockchain-particle:nth-child(3) {
+  top: 40%;
+  right: 35%;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+
+@keyframes particleMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(100px, 50px);
+  }
+  50% {
+    transform: translate(50px, 150px);
+  }
+  75% {
+    transform: translate(-70px, 30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* More dramatic float effect for the bigger visual */
+@keyframes nodeFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(3deg);
+  }
+}
+
+/* Responsive adjustments for the larger blockchain visual */
+@media (max-width: 1400px) {
+  .blockchain-visual {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .blockchain-central {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .central-icon {
+    font-size: 2.5rem;
+  }
+  
+  .blockchain-node {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .blockchain-node i {
+    font-size: 2rem;
+  }
+  
+  .blockchain-connection.connection1,
+  .blockchain-connection.connection2,
+  .blockchain-connection.connection3,
+  .blockchain-connection.connection4 {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blockchain-visual {
+    width: 450px;
+    height: 450px;
+  }
+  
+  .hero-visual {
+    height: 500px;
+  }
+  
+  .blockchain-node {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .blockchain-central {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .central-icon {
+    font-size: 2rem;
+  }
+  
+  .blockchain-connection.connection1,
+  .blockchain-connection.connection2,
+  .blockchain-connection.connection3,
+  .blockchain-connection.connection4 {
+    width: 160px;
+  }
+}
+
+/* Rest of responsive adjustments */
+@media (max-width: 1024px) {
+  /* ... existing media query styles ... */
+  
+  .blockchain-visual {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* New Stats Section with Better Visual Framing */
+.stats-highlight-section {
+  margin: 4rem 0;
+  padding: 2rem 0;
+}
+
+.stats-container {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-header {
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.stats-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.stats-header p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: #f9fafb;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(79, 70, 229, 0.1);
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.stats-cta {
+  margin-top: 1rem;
+}
+
+/* Enhanced Hero Section with More Focus on Animation */
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f9fafb 0%, #eff6ff 100%);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 500px;
+  z-index: 5;
+  padding-right: 2rem;
+}
+
+/* Expanded Visual Section */
+.hero-visual {
+  flex: 1.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 650px;
+}
+
+.blockchain-visual {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  box-shadow: 0 15px 40px rgba(79, 70, 229, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 2s ease;
+}
+
+.blockchain-visual:hover {
+  transform: rotate(10deg) scale(1.02);
+}
+
+/* Double border effect */
+.blockchain-visual::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 50%;
+  border: 2px dashed rgba(79, 70, 229, 0.3);
+  animation: rotateCircle 30s linear infinite;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blockchain-central {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #818cf8);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 10;
+  animation: pulseGlow 3s infinite alternate;
+}
+
+/* Enhanced glow effect */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 25px rgba(79, 70, 229, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 60px rgba(79, 70, 229, 0.7);
+  }
+}
+
+.central-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.central-label {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Positioned nodes for the larger circle */
+.blockchain-node {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blockchain-node:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.4);
+}
+
+.blockchain-node i {
+  font-size: 2.5rem;
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+}
+
+.node-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+/* Repositioned nodes for larger circle */
+.blockchain-node.node1 {
+  top: 80px;
+  left: 100px;
+  animation: nodeFloat 8s infinite ease-in-out;
+}
+
+.blockchain-node.node2 {
+  bottom: 100px;
+  left: 120px;
+  animation: nodeFloat 8s infinite ease-in-out 2s;
+}
+
+.blockchain-node.node3 {
+  top: 120px;
+  right: 100px;
+  animation: nodeFloat 8s infinite ease-in-out 4s;
+}
+
+.blockchain-node.node4 {
+  bottom: 120px;
+  right: 120px;
+  animation: nodeFloat 8s infinite ease-in-out 6s;
+}
+
+/* Longer connections for the expanded circle */
+.blockchain-connection {
+  position: absolute;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(79, 70, 229, 0.2), #4f46e5);
+  z-index: 1;
+  animation: connectionPulse 4s infinite;
+}
+
+.blockchain-connection.connection1 {
+  width: 220px;
+  top: 130px;
+  left: 170px;
+  transform: rotate(15deg);
+}
+
+.blockchain-connection.connection2 {
+  width: 220px;
+  bottom: 160px;
+  left: 190px;
+  transform: rotate(-15deg);
+  animation-delay: 1s;
+}
+
+.blockchain-connection.connection3 {
+  width: 220px;
+  top: 150px;
+  right: 170px;
+  transform: rotate(-15deg);
+  animation-delay: 2s;
+}
+
+.blockchain-connection.connection4 {
+  width: 220px;
+  bottom: 160px;
+  right: 190px;
+  transform: rotate(15deg);
+  animation-delay: 3s;
+}
+
+/* Add orbital rings to enhance the visual */
+.blockchain-visual::after {
+  content: '';
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  border: 1px solid rgba(79, 70, 229, 0.15);
+  animation: rotateCircle 40s linear infinite reverse;
+}
+
+.hero-visual {
+  flex: 1.8; /* Increased from 1.5 to give more space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 650px; /* Increased height */
+}
+
+/* Particles inside the blockchain circle */
+.blockchain-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4f46e5;
+  opacity: 0.7;
+  z-index: 1;
+  animation: particleMove 15s infinite linear;
+}
+
+.blockchain-particle:nth-child(1) {
+  top: 30%;
+  left: 30%;
+  animation-duration: 12s;
+}
+
+.blockchain-particle:nth-child(2) {
+  top: 60%;
+  left: 40%;
+  animation-duration: 18s;
+  animation-delay: 2s;
+}
+
+.blockchain-particle:nth-child(3) {
+  top: 40%;
+  right: 35%;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+
+@keyframes particleMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(100px, 50px);
+  }
+  50% {
+    transform: translate(50px, 150px);
+  }
+  75% {
+    transform: translate(-70px, 30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* More dramatic float effect for the bigger visual */
+@keyframes nodeFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(3deg);
+  }
+}
+
+/* Responsive adjustments for the larger blockchain visual */
+@media (max-width: 1400px) {
+  .blockchain-visual {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .blockchain-central {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .central-icon {
+    font-size: 2.5rem;
+  }
+  
+  .blockchain-node {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .blockchain-node i {
+    font-size: 2rem;
+  }
+  
+  .blockchain-connection.connection1,
+  .blockchain-connection.connection2,
+  .blockchain-connection.connection3,
+  .blockchain-connection.connection4 {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blockchain-visual {
+    width: 450px;
+    height: 450px;
+  }
+  
+  .hero-visual {
+    height: 500px;
+  }
+  
+  .blockchain-node {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .blockchain-central {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .central-icon {
+    font-size: 2rem;
+  }
+  
+  .blockchain-connection.connection1,
+  .blockchain-connection.connection2,
+  .blockchain-connection.connection3,
+  .blockchain-connection.connection4 {
+    width: 160px;
+  }
+}
+
+/* Rest of responsive adjustments */
+@media (max-width: 1024px) {
+  /* ... existing media query styles ... */
+  
+  .blockchain-visual {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* New Stats Section with Better Visual Framing */
+.stats-highlight-section {
+  margin: 4rem 0;
+  padding: 2rem 0;
+}
+
+.stats-container {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-header {
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.stats-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.stats-header p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: #f9fafb;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(79, 70, 229, 0.1);
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.stats-cta {
+  margin-top: 1rem;
+}
+
+/* Enhanced Hero Section with More Focus on Animation */
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f9fafb 0%, #eff6ff 100%);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 500px;
+  z-index: 5;
+  padding-right: 2rem;
+}
+
+/* Expanded Visual Section */
+.hero-visual {
+  flex: 1.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 650px;
+}
+
+.blockchain-visual {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  box-shadow: 0 15px 40px rgba(79, 70, 229, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 2s ease;
+}
+
+.blockchain-visual:hover {
+  transform: rotate(10deg) scale(1.02);
+}
+
+/* Double border effect */
+.blockchain-visual::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 50%;
+  border: 2px dashed rgba(79, 70, 229, 0.3);
+  animation: rotateCircle 30s linear infinite;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blockchain-central {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #818cf8);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 10;
+  animation: pulseGlow 3s infinite alternate;
+}
+
+/* Enhanced glow effect */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 25px rgba(79, 70, 229, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 60px rgba(79, 70, 229, 0.7);
+  }
+}
+
+.central-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.central-label {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Positioned nodes for the larger circle */
+.blockchain-node {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blockchain-node:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.4);
+}
+
+.blockchain-node i {
+  font-size: 2.5rem;
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+}
+
+.node-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+/* Repositioned nodes for larger circle */
+.blockchain-node.node1 {
+  top: 80px;
+  left: 100px;
+  animation: nodeFloat 8s infinite ease-in-out;
+}
+
+.blockchain-node.node2 {
+  bottom: 100px;
+  left: 120px;
+  animation: nodeFloat 8s infinite ease-in-out 2s;
+}
+
+.blockchain-node.node3 {
+  top: 120px;
+  right: 100px;
+  animation: nodeFloat 8s infinite ease-in-out 4s;
+}
+
+.blockchain-node.node4 {
+  bottom: 120px;
+  right: 120px;
+  animation: nodeFloat 8s infinite ease-in-out 6s;
+}
+
+/* Longer connections for the expanded circle */
+.blockchain-connection {
+  position: absolute;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(79, 70, 229, 0.2), #4f46e5);
+  z-index: 1;
+  animation: connectionPulse 4s infinite;
+}
+
+.blockchain-connection.connection1 {
+  width: 220px;
+  top: 130px;
+  left: 170px;
+  transform: rotate(15deg);
+}
+
+.blockchain-connection.connection2 {
+  width: 220px;
+  bottom: 160px;
+  left: 190px;
+  transform: rotate(-15deg);
+  animation-delay: 1s;
+}
+
+.blockchain-connection.connection3 {
+  width: 220px;
+  top: 150px;
+  right: 170px;
+  transform: rotate(-15deg);
+  animation-delay: 2s;
+}
+
+.blockchain-connection.connection4 {
+  width: 220px;
+  bottom: 160px;
+  right: 190px;
+  transform: rotate(15deg);
+  animation-delay: 3s;
+}
+
+/* Add orbital rings to enhance the visual */
+.blockchain-visual::after {
+  content: '';
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  border: 1px solid rgba(79, 70, 229, 0.15);
+  animation: rotateCircle 40s linear infinite reverse;
+}
+
+.hero-visual {
+  flex: 1.8; /* Increased from 1.5 to give more space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 650px; /* Increased height */
+}
+
+/* Particles inside the blockchain circle */
+.blockchain-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4f46e5;
+  opacity: 0.7;
+  z-index: 1;
+  animation: particleMove 15s infinite linear;
+}
+
+.blockchain-particle:nth-child(1) {
+  top: 30%;
+  left: 30%;
+  animation-duration: 12s;
+}
+
+.blockchain-particle:nth-child(2) {
+  top: 60%;
+  left: 40%;
+  animation-duration: 18s;
+  animation-delay: 2s;
+}
+
+.blockchain-particle:nth-child(3) {
+  top: 40%;
+  right: 35%;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+
+@keyframes particleMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(100px, 50px);
+  }
+  50% {
+    transform: translate(50px, 150px);
+  }
+  75% {
+    transform: translate(-70px, 30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* More dramatic float effect for the bigger visual */
+@keyframes nodeFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(3deg);
+  }
+}
+
+/* Responsive adjustments for the larger blockchain visual */
+@media (max-width: 1400px) {
+  .blockchain-visual {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .blockchain-central {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .central-icon {
+    font-size: 2.5rem;
+  }
+  
+  .blockchain-node {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .blockchain-node i {
+    font-size: 2rem;
+  }
+  
+  .blockchain-connection.connection1,
+  .blockchain-connection.connection2,
+  .blockchain-connection.connection3,
+  .blockchain-connection.connection4 {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blockchain-visual {
+    width: 450px;
+    height: 450px;
+  }
+  
+  .hero-visual {
+    height: 500px;
+  }
+  
+  .blockchain-node {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .blockchain-central {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .central-icon {
+    font-size: 2rem;
+  }
+  
+  .blockchain-connection.connection1,
+  .blockchain-connection.connection2,
+  .blockchain-connection.connection3,
+  .blockchain-connection.connection4 {
+    width: 160px;
+  }
+}
+
+/* Rest of responsive adjustments */
+@media (max-width: 1024px) {
+  /* ... existing media query styles ... */
+  
+  .blockchain-visual {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title-bold, 
+  .hero-title-gradient {
+    font-size: 2rem;
+  }
+  
+  .animated-text {
+    font-size: 1.25rem;
+  }
+  
+  .blockchain-visual {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .blockchain-node {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .blockchain-node i {
+    font-size: 1.25rem;
+  }
+  
+  .node-label {
+    font-size: 0.675rem;
+  }
+  
+  .blockchain-central {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .central-icon {
+    font-size: 1.5rem;
+  }
+  
+  .central-label {
+    font-size: 0.675rem;
+  }
+  
+  .stats-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Updated Stats Section without header/CTA */
+.stats-highlight-section {
+  margin: 1rem 0 4rem;
+  padding: 0;
+}
+
+.stats-container {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 2.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Responsive tweaks for expanded visualization */
+@media (max-width: 1200px) {
+  .hero-section {
+    padding: 2rem;
+  }
+  
+  .blockchain-visual {
+    width: 450px;
+    height: 450px;
+  }
+  
+  .blockchain-node {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .blockchain-node.node1 {
+    top: 50px;
+    left: 70px;
+  }
+  
+  .blockchain-node.node3 {
+    top: 70px;
+    right: 70px;
+  }
+  
+  .blockchain-central {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .hero-visual {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .blockchain-visual {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .blockchain-node {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .blockchain-node i {
+    font-size: 1.5rem;
+  }
+  
+  .central-icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .blockchain-visual {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .blockchain-node {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .blockchain-node i {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .node-label {
+    font-size: 0.75rem;
+  }
+  
+  .blockchain-central {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .central-icon {
+    font-size: 1.5rem;
+  }
+  
+  .central-label {
+    font-size: 0.75rem;
+  }
+  
+  .stats-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .blockchain-node.node1 {
+    top: 40px;
+    left: 60px;
+  }
+  
+  .blockchain-node.node2 {
+    bottom: 60px;
+    left: 70px;
+  }
+  
+  .blockchain-node.node3 {
+    top: 60px;
+    right: 60px;
+  }
+  
+  .blockchain-node.node4 {
+    bottom: 70px;
+    right: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-cards {
+    grid-template-columns: 1fr;
+  }
+}

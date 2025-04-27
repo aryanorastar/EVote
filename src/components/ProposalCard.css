@@ -1,0 +1,133 @@
+.proposal-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proposal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.proposal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.proposal-header h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.status {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.status.active {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+
+.status.completed {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+}
+
+.status.failed {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+}
+
+.proposal-description {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.proposal-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.voting-stats {
+  margin-bottom: 15px;
+}
+
+.votes-container {
+  margin-top: 10px;
+}
+
+.vote-bar {
+  height: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.votes-for {
+  height: 100%;
+  background-color: #4caf50;
+}
+
+.vote-counts {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.vote-counts .for {
+  color: #4caf50;
+}
+
+.vote-counts .against {
+  color: #f44336;
+}
+
+.proposal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.vote-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.vote-button.for {
+  background-color: #4caf50;
+  color: white;
+}
+
+.vote-button.for:hover {
+  background-color: #388e3c;
+}
+
+.vote-button.against {
+  background-color: #f44336;
+  color: white;
+}
+
+.vote-button.against:hover {
+  background-color: #d32f2f;
+}
